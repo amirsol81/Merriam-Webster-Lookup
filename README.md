@@ -220,45 +220,49 @@ organized into three tabs: **General**, **Cache**, and **Advanced**.
 
 ### Global
 
-  Shortcut              Action
-  --------------------- -------------------------------------------------------------------------------
-  Control+Alt+Shift+D   Open Merriam-Webster Lookup
-  F1                    Open this help file in the default web browser (press from inside the add-on)
+| Shortcut | Action |
+|---|---|
+| Control+Alt+Shift+D | Open Merriam-Webster Lookup |
+| F1 | Open this help file in the default web browser (press from inside the add-on) |
+
 
 ### Main Dialog
 
-  Shortcut   Action
-  ---------- ---------------------------------------
-  Alt+E      Focus the Search edit box
-  Alt+R      Focus source radio buttons
-  Alt+C      Activate Search
-  Alt+S      Open Settings
-  Alt+W      Open Word of the Day
-  Alt+F      Open Favorites
-  Alt+L      Open Slang & Trending
-  Alt+P      Open Wordplay
-  Alt+M      Open Grammar & Usage
-  Alt+B      Open Browse Words (context-sensitive)
-  Alt+H      Open History
+| Shortcut | Action |
+|---|---|
+| Alt+E | Focus the Search edit box |
+| Alt+R | Focus source radio buttons |
+| Alt+C | Activate Search |
+| Alt+S | Open Settings |
+| Alt+W | Open Word of the Day |
+| Alt+F | Open Favorites |
+| Alt+L | Open Slang & Trending |
+| Alt+P | Open Wordplay |
+| Alt+M | Open Grammar & Usage |
+| Alt+B | Open Browse Words (context-sensitive) |
+| Alt+H | Open History |
+
 
 ### Results Actions
 
-  Shortcut   Action
-  ---------- ---------------------------------------------------
-  Alt+D      Look up the selected word or phrase in Dictionary
-  Alt+A      Look up the selected word or phrase in Thesaurus
-  Alt+G      Look up the selected word or phrase in Slang
-  Alt+T      Move focus to the Results area
+| Shortcut | Action |
+|---|---|
+| Alt+D | Look up the selected word or phrase in Dictionary |
+| Alt+A | Look up the selected word or phrase in Thesaurus |
+| Alt+G | Look up the selected word or phrase in Slang |
+| Alt+T | Move focus to the Results area |
+
 
 ### Results Navigation
 
-  Shortcut      Action
-  ------------- ---------------------------------------
-  H / Shift+H   Navigate between headings
-  L / Shift+L   Navigate between lists
-  A / Shift+A   Navigate between audio pronunciations
-  F7            Heading chooser (list headings)
-  Enter         Activate the current item
+| Shortcut | Action |
+|---|---|
+| H / Shift+H | Navigate between headings |
+| L / Shift+L | Navigate between lists |
+| A / Shift+A | Navigate between audio pronunciations |
+| F7 | Heading chooser (list headings) |
+| Enter | Activate the current item |
+
 
 All shortcuts can be reassigned via NVDA Input Gestures:\
 NVDA menu → Preferences → Input gestures → Merriam-Webster Lookup
