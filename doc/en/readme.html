@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Merriam-Webster Lookup for NVDA</title>
+<script type="text/javascript" nonce="7afbea0b00b14ede85623c525ea" src="//local.adguard.org?ts=1771187096641&amp;type=content-script&amp;dmn=chatgpt.com&amp;url=https%3A%2F%2Fchatgpt.com%2Fbackend-api%2Festuary%2Fcontent%3Fid%3Dfile_000000007658720aafe87769090f22c5%26ts%3D491997%26p%3Dfs%26cid%3D1%26sig%3D6aff256eb665c1a19164b79695ddfe671ce22bde03d23dc2ff1aeb3edf7b5b45%26v%3D0&amp;app=chrome.exe&amp;css=2&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script><script type="text/javascript" nonce="7afbea0b00b14ede85623c525ea" src="//local.adguard.org?ts=1771187096641&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script></head>
+<body>
+
+<h1>Merriam-Webster Lookup for NVDA</h1>
+
+<p><strong>Author:</strong> Amir Soleimani</p>
+
+<h2>Introduction</h2>
+
+<p>
+Merriam-Webster Lookup for NVDA provides immediate, distraction-free access to the full Merriam-Webster website experience directly within NVDA. Dictionary, Thesaurus, and Slang content is presented in a clean, structured format optimized specifically for screen reader users. Non-essential and visually cluttered sections commonly found on the website are removed to ensure a focused and efficient reading experience.
+</p>
+
+<p>
+This add-on intentionally uses the full Merriam-Webster website rather than the limited API. The website provides richer editorial content, more complete examples, dedicated Synonyms sections, structured word history, and additional educational material that are not fully available through the API. In addition, the Browse Words experience is much more complete on the website than what is available through the API. Wordplay and Grammar &amp; Usage articles and categories are also supported, and they are not available through the API.
+</p>
+
+<p>
+The quickest way to open the add-on is the default gesture: <strong>Control+Alt+Shift+D</strong>.
+You can invoke the add-on from anywhere to instantly look up the word under the cursor or any currently selected word or phrase. This allows seamless dictionary access while reading documents, browsing the web, or working in any application.
+</p>
+
+<p>
+From within the results, you can select any word or phrase and immediately perform a new lookup in Dictionary, Thesaurus, or Slang. This enables fast, interactive exploration without leaving the add-on.
+</p>
+
+<p>
+Full audio pronunciation playback is supported directly inside NVDA without opening a web browser. When multiple pronunciations are available, you can navigate between them and play them instantly.
+</p>
+
+<p>
+If no exact match is found, the add-on provides a list of suggestions to help you quickly find the correct spelling or a related entry.
+</p>
+
+<p>
+The add-on uses caching to speed up repeat lookups and reduce unnecessary network requests. You can control caching and other options in Settings.
+</p>
+
+<h2>Requirements</h2>
+
+<ul>
+<li><strong>Minimum required NVDA version:</strong> 2026.1</li>
+<li><strong>Tested and compatible with:</strong> NVDA 2026.1 through 2026.4</li>
+<li>An active internet connection is required for lookups.</li>
+</ul>
+
+<p>
+All keyboard shortcuts can be customized via:<br>
+NVDA menu → Preferences → Input gestures → Merriam-Webster Lookup
+</p>
+
+<h2>Quick Start</h2>
+
+<ol>
+<li>Press <strong>Control+Alt+Shift+D</strong> to open the add-on.</li>
+<li>The word under the cursor or selected text will be used automatically (you can also type your own query). You can also press <strong>Down Arrow</strong> in the search combo box to access your previously searched items.</li>
+<li>If you type a word manually or select a previous search using <strong>Down Arrow</strong>, press <strong>Enter</strong> to immediately search using the default lookup mode (Dictionary) for faster access.</li>
+<li>Choose the desired mode using the available radio buttons (Dictionary or Thesaurus). Slang lookups can be performed directly from the Results area, or by using the Slang &amp; Trending option.</li>
+<li>Press Search to retrieve results.</li>
+<li>If no exact match is found, review the Suggestions list and choose the best match.</li>
+<li>Use navigation commands (headings, lists, audio) to explore the content.</li>
+<li>Optional: Use the context menu for actions such as copying or looking up the selected text.</li>
+</ol>
+
+<h2>Available Sources</h2>
+
+<h3>Dictionary</h3>
+<p>
+Provides full definitions, pronunciations, examples, word history, derived forms, and related sections as available on Merriam-Webster.
+</p>
+
+<h3>Thesaurus</h3>
+<p>
+Displays synonyms, antonyms, and related word groups with structured navigation.
+</p>
+
+<h3>Slang</h3>
+<p>
+Slang is not an independent source (there is no Slang radio button), and it cannot be searched directly from the main Search controls. This matches the Merriam-Webster website, which does not provide a standalone Slang search mode. You can access Slang entries via the Results area, via Browse Words, and via the Slang &amp; Trending option.
+</p>
+
+<h2>Results Area</h2>
+
+<p>
+The Results area behaves like a standard read-only text area: normal text selection and standard reading/navigation commands work as expected.
+</p>
+
+<p>
+Entries include both textual pronunciations (IPA) and audio pronunciations when available. Textual pronunciations appear directly within the entry, and audio pronunciations can be navigated and played.
+</p>
+
+<p>
+Important: if you select a word or phrase in Results, you can look it up immediately using:
+<strong>Alt+D</strong> (Dictionary), <strong>Alt+A</strong> (Thesaurus), and <strong>Alt+G</strong> (Slang).
+</p>
+
+<h2>Navigating Results</h2>
+
+<ul>
+<li>H / Shift+H: Move between headings</li>
+<li>L / Shift+L: Move between lists</li>
+<li>A / Shift+A: Move between audio pronunciations</li>
+<li>F7: Show a list of headings (Heading chooser)</li>
+<li>Enter: Activate the current item</li>
+</ul>
+
+<h2>History</h2>
+
+<p>
+The History list keeps track of recent lookups for quick revisiting.
+</p>
+
+<ul>
+<li><strong>Dictionary and Thesaurus</strong> maintain separate history lists.</li>
+<li><strong>Slang</strong> lookups are stored in the <strong>Dictionary</strong> history list, with the word <strong>"Slang"</strong> appended to the end of the item label.</li>
+</ul>
+
+<p>
+History also provides a context menu for actions such as removing items.
+</p>
+
+<h2>Browse Words</h2>
+
+<p>
+Browse Words lets you explore Merriam-Webster entries without typing a specific query. It is context-sensitive:
+</p>
+
+<ul>
+<li><strong>General browsing:</strong> Choose a bucket such as A–Z, 0–9, BIO, or GEO to browse entries.</li>
+<li><strong>Nearby words browsing:</strong> When you open Browse Words from an active lookup, you can browse words related to the current entry (nearby words).</li>
+</ul>
+
+<p>
+Browse lists include a context menu for actions such as looking up the selected item, copying, or other list-specific actions.
+</p>
+
+<h2>Word of the Day</h2>
+
+<p>
+Word of the Day opens a complete daily entry (including definitions, examples, and related sections when available). This is a quick way to discover new vocabulary using the same optimized reading experience.
+</p>
+
+<p>
+At the beginning of the Word of the Day entry, options such as <strong>Previous</strong> and <strong>Next</strong> are provided. When focused, press <strong>Enter</strong> to move to earlier or later Word of the Day entries.
+
+</p>
+
+
+
+<h3>Wordplay</h3>
+<p>
+Wordplay provides Merriam-Webster articles and topic-based categories. Categories may contain multiple pages; when available, you can use the Previous/Next page buttons to move between pages. Wordplay content is not available through the API and is accessed directly from the website.
+</p>
+
+
+
+<h3>Grammar &amp; Usage</h3>
+<p>
+Grammar &amp; Usage provides Merriam-Webster grammar and usage articles and topic-based categories, similar to Wordplay. The Grammar &amp; Usage home page includes featured articles and a Popular section, followed by categories such as Commonly Confused, Usage Notes, Spelling &amp; Pronunciation, and Punctuation. Category pages may contain multiple pages; when available, use the Previous/Next page buttons to move between pages. Grammar &amp; Usage content is not available through the API and is accessed directly from the website.
+</p>
+
+
+
+<h2>Context Menus</h2>
+
+<p>
+Many parts of the add-on provide context menus to speed up common actions. For example, list views such as Browse, Suggestions, History, and Favorites include list-specific context menu items. The Results area also provides a context menu with actions such as copying content or performing a lookup on the selected text.
+</p>
+
+
+
+<h2>View More Examples</h2>
+
+<p>
+View More Examples is available from the Results area context menu when additional example sentences are provided by Merriam-Webster.
+</p>
+
+<p>
+When opened, additional example sentences appear in a dedicated dialog. While this dialog is open, other add-on windows and commands are temporarily disabled to ensure a stable and focused reading experience.
+</p>
+
+<p>
+Press Escape to close the View More Examples dialog.
+</p>
+
+<h2>Favorites</h2>
+
+<p>
+Favorites allows you to save entries for quick future access. You can add or remove items using the context menus available in:
+<strong>Results</strong>, <strong>History</strong>, <strong>Browse Words</strong>, and the <strong>Suggestions list</strong>.
+Favorites are stored separately for Dictionary and Thesaurus modes to keep your saved entries organized.
+</p>
+
+<p>
+Open Favorites using <strong>Alt+F</strong>. The Favorites list also provides a context menu for managing saved entries, including removing individual items.
+</p>
+
+<h2>Settings</h2>
+
+<p>
+Settings lets you customize the add-on behavior. The Settings dialog is organized into three tabs:
+<strong>General</strong>, <strong>Cache</strong>, and <strong>Advanced</strong>.
+</p>
+
+<ul>
+<li><strong>General:</strong> Includes main behavior options such as Default lookup mode, and History options (for example, history size or disabling history).</li>
+<li><strong>Cache:</strong> Control caching independently for text content and audio content. You can enable or disable each cache and clear cached items separately.</li>
+<li><strong>Advanced:</strong> Additional power-user options for fine-tuning the add-on behavior.</li>
+</ul>
+
+<h2>Keyboard Shortcuts</h2>
+
+<h3>Global</h3>
+<table border="1">
+<tr><th>Shortcut</th><th>Action</th></tr>
+<tr><td>Control+Alt+Shift+D</td><td>Open Merriam-Webster Lookup</td></tr>
+<tr><td>F1</td><td>Open this help file in the default web browser (press from inside the add-on)</td></tr>
+</table>
+
+<h3>Main Dialog</h3>
+<table border="1">
+<tr><th>Shortcut</th><th>Action</th></tr>
+<tr><td>Alt+E</td><td>Focus the Search edit box</td></tr>
+<tr><td>Alt+R</td><td>Focus source radio buttons</td></tr>
+<tr><td>Alt+C</td><td>Activate Search</td></tr>
+<tr><td>Alt+S</td><td>Open Settings</td></tr>
+<tr><td>Alt+W</td><td>Open Word of the Day</td></tr>
+<tr><td>Alt+F</td><td>Open Favorites</td></tr>
+<tr><td>Alt+L</td><td>Open Slang &amp; Trending</td></tr>
+<tr><td>Alt+P</td><td>Open Wordplay</td></tr>
+<tr><td>Alt+M</td><td>Open Grammar &amp; Usage</td></tr>
+<tr><td>Alt+B</td><td>Open Browse Words (context-sensitive)</td></tr>
+<tr><td>Alt+H</td><td>Open History</td></tr>
+</table>
+
+<h3>Results Actions</h3>
+<table border="1">
+<tr><th>Shortcut</th><th>Action</th></tr>
+<tr><td>Alt+D</td><td>Look up the selected word or phrase in Dictionary</td></tr>
+<tr><td>Alt+A</td><td>Look up the selected word or phrase in Thesaurus</td></tr>
+<tr><td>Alt+G</td><td>Look up the selected word or phrase in Slang</td></tr>
+<tr><td>Alt+T</td><td>Move focus to the Results area</td></tr>
+</table>
+
+<h3>Results Navigation</h3>
+<table border="1">
+<tr><th>Shortcut</th><th>Action</th></tr>
+<tr><td>H / Shift+H</td><td>Navigate between headings</td></tr>
+<tr><td>L / Shift+L</td><td>Navigate between lists</td></tr>
+<tr><td>A / Shift+A</td><td>Navigate between audio pronunciations</td></tr>
+<tr><td>F7</td><td>Heading chooser (list headings)</td></tr>
+<tr><td>Enter</td><td>Activate the current item</td></tr>
+</table>
+
+<p>
+All shortcuts can be reassigned via NVDA Input Gestures:<br>
+NVDA menu → Preferences → Input gestures → Merriam-Webster Lookup
+</p>
+
+<h2>Notes</h2>
+
+<ul>
+<li>This add-on relies on the structure of the Merriam-Webster website.</li>
+<li>An internet connection is required for lookups.</li>
+<li>Content is provided by Merriam-Webster.</li>
+</ul>
+
+
+<h2>Changelog</h2>
+
+<h3>Version 1.1.0</h3>
+<ul>
+<li>Improved handling of Merriam-Webster verification pages. When the website temporarily returns a browser verification or challenge page, the add-on no longer shows the raw page content in results or stores it in the cache.</li>
+<li>Improved network reliability for lookups. The add-on now uses a more browser-like request session, retries temporary verification responses more safely, refreshes the session when needed, and better handles network changes such as switching a VPN on or off.</li>
+<li>Removed Merriam-Webster Simple Definition boilerplate from results. Messages such as “A Simple Definition is available from our Learner's Dictionary...” are no longer shown to the user.</li>
+<li>Fixed formatting for entries such as <code>android</code>, where pronunciation text could be incorrectly joined with the definition.</li>
+<li>Fixed an extra punctuation artifact in the <code>android</code> entry, so the definition is displayed as <code>a mobile robot usually with a human form</code>.</li>
+<li>Fixed an unwanted line break in the <code>android</code> definition so <code>human form</code> remains on the same line as the rest of the definition.</li>
+<li>Preserved existing cleanup behavior for promotional quiz and website boilerplate while keeping real dictionary content visible.</li>
+</ul>
+
+</body>
+</html>
